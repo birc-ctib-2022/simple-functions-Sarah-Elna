@@ -45,5 +45,6 @@ def dist(p1, p2):
     """
     x1, y1 = p1
     x2, y2 = p2
-    return sqrt(((-1*(x1-x2))**2)-((y1-y2)**2))
+    result = sqrt((((x1-x2))**2)+((y1-y2)**2))
+    return result
             
