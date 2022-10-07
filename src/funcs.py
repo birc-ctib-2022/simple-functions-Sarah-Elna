@@ -41,17 +41,9 @@ def dist(p1, p2):
     Compute the distance between p1 and p2.
 
     >>> dist((1,2), (3,4))
-    sqrt(8)
+    2.8284271247461903
     """
     x1, y1 = p1
     x2, y2 = p2
-    if (x1 - x2) % 2 == 0:
-        if (y1 - y2) % 2 == 0:
-            return sqrt(((x1-x2)**2)+((y1-y2)**2))
-        else:
-            return sqrt(((x1-x2)**2)-((y1-y2)**2))
-    else:
-        if (y1 - y2) % 2 == 0:
-            return sqrt(((-1*(x1-x2))**2)+((y1-y2)**2))
-        else:
-            return sqrt(((-1*(x1-x2))**2)-((y1-y2)**2))
+    return sqrt(((-1*(x1-x2))**2)-((y1-y2)**2))
+            
